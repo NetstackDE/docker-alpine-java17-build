@@ -2,10 +2,11 @@ FROM alpine:latest
 MAINTAINER Andreas Pfeiffer - Netstack <pfeiffer@netstack.de>
 
 #add testing repo for JAVA 17
-echo "@test http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+RUN echo "@test http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+RUN apk update
 
 #Install JAVA and Gradle 
-RUN apk add openjdk17
+RUN apk add openjdk17@test
 RUN apk add maven
 
 #Install Bash & git 
