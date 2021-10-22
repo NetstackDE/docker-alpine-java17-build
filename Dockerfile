@@ -8,6 +8,7 @@ RUN apk update
 #Install JAVA and Gradle 
 RUN apk add openjdk17@test
 RUN apk add maven
+RUN apk add gradle
 
 #Install Bash & git 
 RUN apk add bash 
