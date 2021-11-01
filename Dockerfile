@@ -23,5 +23,6 @@ RUN wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.28-r0/
 RUN apk add glibc-2.28-r0.apk
 RUN apk add glibc-bin-2.28-r0.apk
 RUN apk add glibc-i18n-2.28-r0.apk
+RUN apk add libstdc++6
 
 CMD ["/bin/bash"]
