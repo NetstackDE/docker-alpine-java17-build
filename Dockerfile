@@ -24,6 +24,6 @@ RUN apk add glibc-2.34-r0.apk
 RUN apk add glibc-bin-2.34-r0.apk
 RUN apk add glibc-i18n-2.34-r0.apk
 RUN apk add libstdc++6 libgcc libstdc++ curl gnupg
-RUN apk add nodejs
+RUN apk add nodejs npm
 
 CMD ["/bin/bash"]
