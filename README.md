@@ -6,9 +6,7 @@ docker image for java17 builds
 
 # includes additional software
 
-* OpenJDK17 (testing)
+* OpenJDK17 
 * Bash Shell
-* MAVEN
-* Gradle
 * Git
-* node binaries
+* nodejs 16
