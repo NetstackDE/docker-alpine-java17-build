@@ -1,7 +1,9 @@
 FROM alpine:edge
 MAINTAINER Andreas Pfeiffer - Netstack <pfeiffer@netstack.de>
 
-#add testing repo for JAVA 17
+#update keys
+RUN apk update
+RUN apk add -X https://dl-cdn.alpinelinux.org/alpine/v3.16/main -u alpine-keys
 RUN apk update
 
 #Install JAVA and Gradle 
