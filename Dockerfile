@@ -9,6 +9,7 @@ RUN apk update
 #Install JAVA and Gradle 
 RUN apk add openjdk17
 RUN apk add nodejs
+RUN apk add maven
 
 #Install Bash & git 
 RUN apk add bash 
